@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leha-aga</title>
+    <link rel="stylesheet" href="css/audioplayer.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <div class="abilities">
+        <EMBED SRC="audio/start.mp3" HIDDEN="true" AUTOSTART="TRUE" HEIGHT="45">
+        <header class="header">
+            <h1 class="title ">привет леша <br><span>Я твой подарок</span></h1>
+        </header>
+        <div class="bot bot_1">
+            <img src="img/bot/bot_8.png" alt="android" class="bot__img">
+
+        </div>
+        <h2 class="subtitle" id="welcome"></h2>
+        <h2 class="subtitle subtitle_1">
+            Посмотри каким я могу быть <br> &darr; &darr; &darr;
+        </h2>
+        <div class="bot bot_2">
+            <img src="img/bot/bot_5.png" alt="android" class="bot__img">
+        </div>
+        <h2 class="subtitle subtitle_2">
+            <span>&larr;</span> Счастлив !!!
+        </h2>
+        <div class="bot bot_3">
+            <img src="img/bot/bot_10.png" alt="android" class="bot__img">
+        </div>
+        <h2 class="subtitle subtitle_3">
+            <span>&larr;</span> Хмурюсь !!!
+        </h2>
+        <div class="bot bot_4">
+            <img src="img/bot/bot_9.png" alt="android" class="bot__img">
+        </div>
+        <h2 class="subtitle subtitle_4">
+            Работаю !!! <span>&rarr;</span>
+        </h2>
+        <h2 class="subtitle subtitle_5">
+            Для начала нужно дать мне имя. &darr;
+        </h2>
+        <div class="name">
+            <button id="name-droid" class="name-button" name="name" type="button"><span>Нажми на меня</span></button>
+        </div>
+        <h2 class="subtitle subtitle_6">
+            Я хоть и молод, но уже кое-что умею.
+        </h2>
+        <h2 class="subtitle subtitle_7">
+            &darr; Ты можешь посмотреть это там. &darr;
+        </h2>
+    </div>
+
+    <div class="offers">
+        <div class="ofg ofg_1">
+            <h3 class="ofg__title">&#128222; &emsp; Позвонить по &emsp; &#128222;</h3>
+            <div class="ofg__wrapper">
+                <h2 class="ofg__subtitle ofg__subtitle_2"><a href="skype:login?userinfo" class="ofg__link"
+                        target="_blank">&#9990; &ensp; Skype &ensp; &#9990;</a></h2>
+                <h2 class="ofg__subtitle ofg__subtitle_2"><a href="viber://chats" class="ofg__link"
+                        target="_blank">&#9990; &ensp; Viber &ensp; &#9990;</a></h2>
+            </div>
+        </div>
+        <div class="ofg ofg_2">
+            <h3 class="ofg__title">&#128105; &#128104;&#8205;&#129457; &emsp; Поболтать в соцсетях &#128064;</h3>
+            <div class="ofg__wrapper">
+                <h2 class="ofg__subtitle ofg__subtitle_2"><a href="https://" class="ofg__link" target="_blank">OK</a>
+                </h2>
+                <h2 class="ofg__subtitle ofg__subtitle_2"><a href="https://" class="ofg__link" target="_blank">VK</a>
+                </h2>
+            </div>
+        </div>
+        <div class="ofg ofg_3">
+            <h3 class="ofg__title">&#129488; &emsp; Я пока не умею разговаривать &emsp; &#129296;</h3>
+            <div class="ofg__wrapper">
+                <h2 class="ofg__subtitle ofg__subtitle_2"><span class="ofg__link">поэтому поговори с Алисой</span></h2>
+                <h2 class="ofg__subtitle ofg__subtitle_2"><a href="https://yandex.ru/" class="ofg__link"
+                        target="_blank">&#128105;&#8205;&#129457; &emsp; Alisa</a></h2>
+            </div>
+        </div>
+        <div class="ofg ofg_4">
+            <h3 class="ofg__title">&#127928; &emsp; Музыкальный релакс &emsp; &#127925;</h3>
+            <div class="ofg__wrapper">
+                <h2 class="ofg__subtitle ofg__subtitle_3"><a id="audio/i_2.mp3" class="ofg__link list__item"
+                        target="_blank">&#9199;</a></h2>
+                <h2 class="ofg__subtitle ofg__subtitle_3"><a id="audio/i_1.mp3" class="ofg__link list__item"
+                        target="_blank">&#9193;</a></h2>
+                <h2 class="ofg__subtitle ofg__subtitle_3"><a id="audio/i_3.mp3" class="ofg__link list__item"
+                        target="_blank">&#9197;</a></h2>
+                <script>
+                    let track = document.getElementsByClassName('list__item');
+                    for (var i = 0; i < track.length; i++) {
+                        track[i].onclick = function () {
+                            audio.src = this.id;
+                            audio.play();
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="ofg ofg_5">
+            <div class="player">
+                <div id="wrapper">
+                    <audio id="audio" src="audio/i_4.mp3" preload="auto" controls loop>
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+        <div class="ofg ofg_6">
+            <h3 class="ofg__title"><a class="ofg__link" href="pages/ente.html" target="_blank"
+                    rel="noopener noreferrer">&#127993; &emsp; Пострелять уток &emsp; &#128064;</a></h3>
+        </div>
+        <div class="ofg ofg_7">
+            <h3 class="ofg__title">&#129351; &emsp; Поздравление &emsp; &#128142;</h3>
+            <div class="ofg__wrapper">
+                <h2 class="ofg__subtitle ofg__subtitle_2"><a class="ofg__link list__item" href="pages/slider.html"
+                        target="_blank">&#128315; перейти &#128315;</a></h2>
+                <h2 class="ofg__subtitle ofg__subtitle_2">
+                    <a href="pages/slider.html" target="_blank">
+                        <div class="rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                    </a>
+                </h2>
+            </div>
+        </div>
+        <div class="felicitation felicitation_1">
+            Для мужчины возраст как проверка: <br> Чем солидней, тем ценней годА. <br> Взгляд мудрей становится, не
+            меркнет. <br> И теперь проблемы — ерунда.
+        </div>
+        <div class="felicitation felicitation_2">
+            Ангел пусть семью оберегает, <br> Рядом будут близкие, друзья. <br> И Господь во всем пусть помогает. <br>
+            Будет дружной, слаженной семья.
+        </div>
+        <div class="felicitation felicitation_3">
+            С УВАЖЕНИЕМ ТАНЯ И АНДРЕЙ
+        </div>
+    </div>
+
+    <script src="js/jquery5.3.1.js"></script>
+    <script src="js/jquerymigrate1.4.1.js"></script>
+    <script src="js/audioplayer.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        $(function () {
+            $('audio').audioPlayer();
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

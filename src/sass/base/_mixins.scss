@@ -1,0 +1,52 @@
+//{ @include font($font-size, $font-weight, #ffffff); }
+@mixin font($font-size:1em, $font-weight:400, $color: #ffffff) {
+    font: {
+        size: $font-size;
+        weight: $font-weight;
+    }
+    color: $color;
+}
+
+//{ @include block-image(0px, 0px); }
+@mixin block-image($weight:100px, $height:100px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    width: $weight;
+    height: $height;
+}
+
+//{ @include centerTL(50%, 50%); }
+@mixin centerTL($top: 50%, $left: 50%) {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: $top;
+    left: $left;
+}
+
+//{ @include centerBR(50%, 50%); }
+@mixin centerBR($bottom: 50%, $right: 50%) {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: $bottom;
+    right: $right;
+}
+
+//{ @include centerX(0%, auto); }
+@mixin centerX($top:auto, $bottom:auto) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: $top;
+    bottom: $bottom
+}
+
+//{ @include centerY(0px, auto); }
+@mixin centerY($left:auto, $right:auto) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: $left;
+    right: $right;
+}

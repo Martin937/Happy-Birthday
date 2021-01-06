@@ -1,0 +1,73 @@
+.abilities {
+    display: grid;
+    grid-template-columns: 110px repeat(4, 1fr) 110px;
+    grid-template-rows: 200px repeat(5, 85px) 50px;
+    grid-gap: 1em;
+}
+
+.header {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+}
+
+.bot {
+    &_1 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+    &_2 {
+        grid-column: 3 / 4;
+        grid-row: 3 / 5;
+    }
+    &_3 {
+        grid-column: 4 / 5;
+        grid-row: 4 / 6;
+    }
+    &_4 {
+        grid-column: 5 / 6;
+        grid-row: 5 / 7;
+    }
+}
+
+.subtitle {
+    &_1 {
+        grid-column: 3 / 6;
+        grid-row: 2 / 3;
+    }
+    &_2 {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+    &_3 {
+        grid-column: 5 / 6;
+        grid-row: 4 / 5;
+    }
+    &_4 {
+        grid-column: 4 / 5;
+        grid-row: 6 / 7;
+    }
+    &_5 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    &_6 {
+        color: #ffe600;
+        grid-column: 2 / 4;
+        grid-row: 7 / 8;
+    }
+    &_7 {
+        color: #ffe600;
+        grid-column: 4 / 6;
+        grid-row: 7 / 8;
+    }
+}
+
+#welcome {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.name {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}

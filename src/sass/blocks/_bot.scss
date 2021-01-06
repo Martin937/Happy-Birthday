@@ -1,0 +1,32 @@
+.bot {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: all 1.5s;
+    &:not(.bot_1) {
+        transform: scale(0.7);
+        opacity: 0.3;
+        &:hover {
+            transform: scale(1.5) rotate(360deg);
+            opacity: 1;
+        }
+    }
+    img {
+        @include centerTL(50%, 50%);
+    }
+    &_2 {
+        img {
+            width: 80%;
+        }
+    }
+    &_3 {
+        img {
+            width: 60%;
+        }
+    }
+    &_4 {
+        img {
+            width: 70%;
+        }
+    }
+}
