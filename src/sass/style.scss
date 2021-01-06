@@ -1,22 +1,24 @@
-@import 'libs/reset';
-@import 'libs/font';
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/animations';
+@import "libs/reset";
+@import "libs/font";
+@import "libs/audioplayer";
+// @import 'libs/slick';
+@import "base/variables";
+@import "base/mixins";
+@import "base/animations";
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+  font-family: "Museo Sans Cyrl", sans-serif;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-@import 'blocks/abilities';
-@import 'blocks/bot';
-@import 'blocks/abilities_grid';
-@import 'blocks/offers';
-@import 'blocks/offers';
-@import 'blocks/rating';
-@import 'blocks/offers_grid';
-@import 'blocks/audio';
+@import "blocks/abilities";
+@import "blocks/bot";
+@import "blocks/abilities_grid";
+@import "blocks/offers";
+@import "blocks/offers";
+@import "blocks/rating";
+@import "blocks/offers_grid";
+@import "blocks/audio";

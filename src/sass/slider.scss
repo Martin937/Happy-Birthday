@@ -1,0 +1,69 @@
+@import "libs/slick";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #f00,
+    #ffa500,
+    #ff0,
+    #008000,
+    #00f,
+    #4b0082,
+    #ee82ee
+  );
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.fade {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 88%;
+  padding: 8px;
+  z-index: 10;
+}
+
+.slick-slider img {
+  //   width: 100%;
+  width: 860px;
+  height: 85vh;
+}
+
+// .slick-prev,
+// .slick-next {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   left: -66px;
+//   border: none;
+//   background-color: rgb(250, 93, 2);
+// }
+
+// .slick-next {
+//   background-color: rgb(143, 0, 199);
+// }
+
+// .slick-prev img,
+// .slick-next img {
+//   width: 30px;
+//   height: 70px;
+// }
+
+// .slick-next {
+//   right: -66px;
+//   left: auto;
+// }
